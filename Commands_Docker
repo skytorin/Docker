@@ -1,0 +1,51 @@
+# Просмотр имеджей в локальном репозитарии:
+docker images
+
+# Удаление имеджа из локального репозитария: 
+docker rmi {id}
+docker rmi -f {id}
+
+#
+docker build
+
+# Запуск контейнера из образа с переходом в шелл контейнера:
+docker run -it skytorin:alpine
+
+# Запуск контейнера из образа + в фоне + создание имени для контейнера + мапинг локального порта 8080 на порт 80 контейнера:
+docker run --name skytorin_nginx -d -p 8080:80 skytorin:nginx
+
+# Запуск остановленного контейнера:
+docker start
+
+# Остановка контейнера:
+docker stop
+
+# Грубо убивает контейнер:
+docker kill
+
+# Вывод информации о запущенных контейнерах
+docker ps
+
+# Вывод информации о всех имеющихся контейнерах: 
+docker ps -a
+
+# Интеративная информация по использованию ресурсов хоста хапущенными контейнерами:
+docker stats
+
+# Вывод логов контейнера:
+docker logs skytorin_alpine
+
+# Список томов:
+docker volume ls
+
+# Доступ к консоли контейнера:
+docker exec -it skytorin/alpine:latest /bin/sh
+
+# Взаимодействие с удаленным репозитарием:
+docker login --username skytorin 
+docker push skytorin/alpine:latest 
+docker pull skytorin/alpine:latest 
+docker tag local-image:tagname new-repo:tagname
+docker push new-repo:tagname
+
+
