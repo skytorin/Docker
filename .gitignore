@@ -1,0 +1,5 @@
+.ZBX_DB_CA_FILE/
+.ZBX_DB_CERT_FILE/
+.ZBX_DB_KEY_FILE/
+zbx_env/
+
