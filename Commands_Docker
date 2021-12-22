@@ -1,3 +1,47 @@
+-------------------------------------
+### Установка Docker в Ubuntu 20.04:
+-------------------------------------
+#
+# Обновление базы пакетов
+sudo apt update
+
+# Позволит apt использовать пакеты через HTTPS
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+
+# Добавление ключа GPG для официального репозитория Docker
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+# Добавление репозитория Docker в источники APT
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+
+# Обновление базы пакетов
+sudo apt update
+
+# Необязательный шаг для проверки источника установки:
+apt-cache policy docker-ce
+
+# Установка Docker
+sudo apt install docker-ce
+
+# Проверка статуса
+sudo systemctl status docker
+
+# Добавление пользователя в группу docker (чтобы не не писать sudo):
+sudo usermod -aG docker ${USER}
+
+# Проверка, входит ли пользователь в группу Docker
+id -nG
+###
+
+
+
+
+
+
+------------------
+### Команды Docker
+------------------
+#
 # Просмотр имеджей в локальном репозитарии:
 docker images
 
