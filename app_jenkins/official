@@ -1,0 +1,5 @@
+# https://github.com/jenkinsci/docker#readme
+docker run -d --name my_jenkins -v jenkins_home:/var/jenkins_home -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts-jdk11
+
+# Ключ для первого входа
+sudo cat /var/lib/docker/volumes/jenkins_home/_data/secrets/initialAdminPassword
