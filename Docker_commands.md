@@ -399,6 +399,7 @@ docker system prune
 docker system prune --volumes
 ```
 
+Создание образа из dockerfile
 ```bash
 docker build
 ```
