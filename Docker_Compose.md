@@ -1,7 +1,7 @@
 # Docker Compose
 ## Установка Docker Compose
-Проверяем последнюю версию релиза на странице https://github.com/docker/compose/releases
-Загружаем версию 1.29.2 и сохраняет исполняемый файл в каталоге /usr/local/bin/docker-compose
+Проверяем последнюю версию релиза на странице https://github.com/docker/compose/releases  
+Загружаем версию 1.29.2 и сохраняем исполняемый файл в каталоге /usr/local/bin/docker-compose
 ```bash
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo curl -L "https://github.com/docker/compose/releases/download/v2.2.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
@@ -18,13 +18,13 @@ docker-compose --version
 ```
 
 ## Настройка файла docker-compose.yml
-Cоздаём новый каталог в домашнем каталоге и перейдите в него
+Cоздаём новый каталог в домашнем каталоге и переходим в него
 ```bash
 mkdir ~/compose-demo
 cd ~/compose-demo
 ```
 
-Настройте в этом каталоге папку приложения, которая будет выступать в качестве корневого каталога документов для вашей среды Nginx
+Настраиваем в этом каталоге папку приложения, которая будет выступать в качестве корневого каталога документов среды Nginx
 ```bash
 mkdir my_app
 ```
@@ -45,7 +45,7 @@ vi my_app/docker-compose.yml
 docker-compose up -d
 ```
 
-Просмотр информации о запущенном контейнера
+Просмотр информации о запущенном контейнере
 ```bash
 docker-compose ps
 ```
@@ -65,7 +65,7 @@ docker-compose pause
 docker-compose unpause
 ```
 
-Остановка выполнения контейнеров, не уничтожает данные, связанные контейнерами
+Остановка выполнения контейнеров, не уничтожает данные, связанные с контейнерами
 ```bash
 docker-compose stop
 ```
