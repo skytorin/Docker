@@ -81,6 +81,8 @@ docker logs skytorin_alpine
 
 # Список томов:
 docker volume ls
+ls /var/lib/docker/volumes/
+
 
 # Доступ к консоли контейнера:
 docker exec -it skytorin/alpine:latest /bin/sh
