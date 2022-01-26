@@ -1,0 +1,12 @@
+[17-Jan-2022 00:35:08] NOTICE: [pool www] child 9048 exited with code 0 after 9000.034208 seconds from start
+[17-Jan-2022 00:35:08] NOTICE: [pool www] child 14519 started
+[17-Jan-2022 02:13:22] NOTICE: [pool www] child 12639 exited with code 0 after 9002.037539 seconds from start
+[17-Jan-2022 02:13:22] NOTICE: [pool www] child 18020 started
+[17-Jan-2022 02:28:10] NOTICE: [pool www] child 13240 exited with code 0 after 9001.995004 seconds from start
+[17-Jan-2022 02:28:10] NOTICE: [pool www] child 18621 started
+[17-Jan-2022 03:05:10] NOTICE: [pool www] child 14519 exited with code 0 after 9001.992984 seconds from start
+[17-Jan-2022 03:05:10] NOTICE: [pool www] child 19942 started
+[17-Jan-2022 04:43:22] NOTICE: [pool www] child 18020 exited with code 0 after 8999.966104 seconds from start
+[17-Jan-2022 04:43:22] NOTICE: [pool www] child 23653 started
+[21-Jan-2022 09:25:20] NOTICE: fpm is running, pid 2662
+[21-Jan-2022 09:25:20] NOTICE: ready to handle connections
