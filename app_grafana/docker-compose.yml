@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+  grafana:
+    image: grafana/grafana-oss
+    ports:
+      - 3000:3000
+    volumes:
+      - type: bind
+        source: ./grafana/grafana.ini
+        target: /etc/grafana/grafana.ini
+        read_only: true
+        #- type: volume
+        #- ./grafana:/etc/grafana
+    environment: 
+      DEFAULT_GRAFANA_LOGIN: admin
+      DEFAULT_GRAFANA_PASSWORD: admin
