@@ -1,4 +1,4 @@
-[2022-01-21 06:26:01] Fetching UNREAD emails for the last 3 days.
-[2022-01-21 06:26:01] Mailbox: Support
-[2022-01-21 06:26:02] Error: imap_open(): Couldn't open stream {imap.yandex.ru:993/imap/novalidate-cert/ssl}. Retrying PLAIN authentication after [AUTHENTICATIONFAILED] AUTHENTICATE invalid credentials or IMAP is disabled sc=2; Retrying PLAIN authentication after [AUTHENTICATIONFAILED] AUTHENTICATE invalid credentials or IMAP is disabled sc=2; Can not authenticate to IMAP server: [AUTHENTICATIONFAILED] AUTHENTICATE invalid credentials or IMAP is disabled sc=2; File: /www/html/overrides/Webklex/IMAP/Client.php (230)
-[2022-01-21 06:26:02] Fetching finished
+[2022-02-08 21:24:01] Fetching UNREAD emails for the last 3 days.
+[2022-02-08 21:24:01] Mailbox: Support
+[2022-02-08 21:24:02] Error: imap_open(): Couldn't open stream {imap.yandex.ru:993/imap/novalidate-cert/ssl}. Retrying PLAIN authentication after [AUTHENTICATIONFAILED] AUTHENTICATE invalid credentials or IMAP is disabled sc=1; Retrying PLAIN authentication after [AUTHENTICATIONFAILED] AUTHENTICATE invalid credentials or IMAP is disabled sc=1; Can not authenticate to IMAP server: [AUTHENTICATIONFAILED] AUTHENTICATE invalid credentials or IMAP is disabled sc=1; File: /www/html/overrides/Webklex/IMAP/Client.php (230)
+[2022-02-08 21:24:02] Fetching finished

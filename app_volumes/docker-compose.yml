@@ -1,0 +1,28 @@
+version: '3.9'
+
+services:
+  test_volumes:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - type: bind
+        source: ./etc-issue/issue
+        target: /etc/issue
+        read_only: true
+      - type: bind
+        source: ./my-index-html
+        target: /usr/share/nginx/html
+        read_only: false
+        # Default location of the volume's folder is /varlib/docker/volumes/
+      - my-data-01:/home/my-data-01:ro
+      - my-data-02:/home/my-data-02:rw
+    
+volumes:
+  # Value of the variable is set in the file .env        
+  my-data-01:
+    name: ${VOLUME_ID_01}
+  my-data-02:
+    name: ${VOLUME_ID_02}
+      
+                
