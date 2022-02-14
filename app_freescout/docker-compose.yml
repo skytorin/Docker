@@ -30,7 +30,7 @@ services:
     - ENABLE_SSL_PROXY=FALSE
     - DISPLAY_ERRORS=FALSE
     - TIMEZONE=America/Vancouver
-    restart: always
+    # restart: always
 
   freescout-db:
     image: tiredofit/mariadb
@@ -44,7 +44,7 @@ services:
       - DB_PASS=freescout
 
       - CONTAINER_NAME=freescout-db
-    restart: always
+    # restart: always
 
   freescout-db-backup:
     container_name: freescout-db-backup
@@ -65,4 +65,4 @@ services:
       - DB_CLEANUP_TIME=8640
       - COMPRESSION=BZ
       - MD5=TRUE
-    restart: always
+    # restart: always
