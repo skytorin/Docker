@@ -36,7 +36,7 @@ docker node ls
 docker service create --name vote -p 8080:80 instavote/vote
 ```
 
-Список заданий Swarm
+Список сервисов Swarm (только на менеджерской ноде)
 ```bash
 docker service ps
 ```
@@ -51,8 +51,8 @@ docker service scale vote=3
 docker service update --image instavote/vote:movies vote
 docker service update --force --update-parallelism 1 --update-delay 30s nginx
 docker service update --update-parallelism 5--update-delay 2s --image instavote/vote:indent vote
-docker service update --limit-cpu 2 nginx
-docker service update --replicas=5 nginx
+docker service update --limit-cpu 2 my-service
+docker service update --replicas 5 my-service
 ```
 
 
