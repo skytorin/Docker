@@ -1,0 +1,1 @@
+export GITLAB_HOME=$HOME/My_Projects/Docker/app_gitlab/GITLAB_HOME
