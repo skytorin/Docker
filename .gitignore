@@ -3,3 +3,4 @@
 .ZBX_DB_KEY_FILE/
 zbx_env/
 db/
+app_gitlab/GITLAB_HOME/
