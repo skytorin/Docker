@@ -25,6 +25,8 @@ services:
       DB_PASS: wikijsrocks
       DB_NAME: wiki
     restart: unless-stopped
+    extra_hosts:
+      - "gitlab-otp.io.neolant-srv.ru:192.168.77.77"
     volumes:
       - app-data:/var/lib/postgresql/data
     ports:
