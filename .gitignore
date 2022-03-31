@@ -6,3 +6,5 @@ db/
 app_gitlab/GITLAB_HOME/config
 app_gitlab/GITLAB_HOME/logs
 app_gitlab/GITLAB_HOME/data
+db-data/
+backup/
