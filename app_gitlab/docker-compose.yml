@@ -3,7 +3,7 @@ services:
   web:
     image: 'gitlab/gitlab-ce:latest'
     #restart: always
-    restart: unless-stopped
+    restart: unless-stopped    
     hostname: 'gitlab.neolant-srv.ru'
     environment:
       GITLAB_HOME:
