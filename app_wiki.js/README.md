@@ -14,13 +14,13 @@ wiki=# \q  # выход
 ```
 psql wiki wikijs
 ```
-Просмотр всех доступных папок
+Просмотр всех доступных папок и их ID
 ```
-select * from "assetFolders"; this will list all the folders in available
+select * from "assetFolders";
 ```
-Удаление ненужной папки по ее id
+Удаление ненужной папки по ее ID
 ```
-delete from "assetFolders" where id=<id of the folder>;
+delete from "assetFolders" where id=<id_folder>;
 ```
 
 ## Процедура резервного копирования
