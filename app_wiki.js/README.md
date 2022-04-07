@@ -9,6 +9,20 @@ wiki=# \l  # показать базы данных
 wiki=# \q  # выход
 ```
 
+## Удаление папок
+Подключаемся к БД
+```
+psql wiki wikijs
+```
+Просмотр всех доступных папок
+```
+select * from "assetFolders"; this will list all the folders in available
+```
+Удаление ненужной папки по ее id
+```
+delete from "assetFolders" where id=<id of the folder>;
+```
+
 ## Процедура резервного копирования
 1. Остановите клиент БД (в нашем случае это контейнер c приложением wiki.js)
 ```
