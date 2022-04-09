@@ -5,11 +5,12 @@
 ```
 $psql -h localhost -p 5416 -U <my-user> -d <my-database>
 $psql -p 5432 -U wikijs -d wiki
-wiki=# \l  # показать базы данных
-wiki=# \q  # выход
+wiki=# \l   # просмотр всех БД
+wiki=# \dt  # просмотр всех таблиц в БД
+wiki=# \q   # выход из psql
 ```
 
-## Удаление папок
+## Удаление и переименование папок
 Подключаемся к БД
 ```
 psql wiki wikijs
@@ -21,6 +22,11 @@ select * from "assetFolders";
 Удаление ненужной папки по ее ID
 ```
 delete from "assetFolders" where id=<id_folder>;
+```
+Переименоване папки
+```
+UPDATE "assetFolders" SET name = 'interstorage-assets' WHERE name = 'assets';
+UPDATE "assetFolders" SET slug = 'interstorage-assets' WHERE slug = 'assets';
 ```
 
 ## Процедура резервного копирования
