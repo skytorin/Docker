@@ -1,54 +1,77 @@
 # Docker 
-## Установка Docker в Ubuntu 20.04
-Обновление базы пакетов
+
+
+## Установка Docker
+### Ручая установка
+```bash
+curl -L get.docker.com | bash
+```
+
+### Установка через APT
+1. Обновление базы пакетов:
 ```bash
 sudo apt update
 ```
 
-Позволит apt использовать пакеты через HTTPS
+2. Позволяем APT использовать пакеты через HTTPS:
 ```bash
 sudo apt install apt-transport-https ca-certificates curl software-properties-common
 ```
 
-Добавление ключа GPG для официального репозитория Docker
+3. Добавление ключа GPG для официального репозитория Docker:
 ```bash
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 ```
 
-Добавление репозитория Docker в источники APT
+4. Добавление репозитория Docker в источники APT:
 ```bash
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
 ```
 
-Обновление базы пакетов
+5. Обновление базы пакетов:
 ```bash
 sudo apt update
 ```
 
-Необязательный шаг для проверки источника установки
+6. Необязательный шаг для проверки источника установки;
 ```bash
 apt-cache policy docker-ce
 ```
 
-Установка Docker
+7. Установка Docker:
 ```bash
 sudo apt install docker-ce
 ```
 
-Проверка статуса
-```bash
-sudo systemctl status docker
-```
-
-Добавление пользователя в группу docker (чтобы не использовать sudo)
+### Общие послеустановочные шаги
+Добавление пользователя в группу docker (чтобы не использовать sudo):
 ```bash
 sudo usermod -aG docker ${USER}
 ```
 
-Проверка, входит ли пользователь в группу Docker
+Проверка, успешного добавления пользователя в группу Docker:
 ```bash
 id -nG
 ```
+Проверка статуса:
+```bash
+sudo systemctl status docker
+ или
+sudo service docker status
+```
+
+Запуск службы Docker:
+```bash
+sudo systemctl start docker
+ или
+sudo service docker start
+```
+
+Проверка версии Docker:
+```bash
+docker --version
+```
+
 
 ## Команды Docker
 ### Работа с images 

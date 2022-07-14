@@ -1,18 +1,20 @@
 # Docker Compose
+
+
 ## Установка Docker Compose
-Проверяем последнюю версию релиза на странице https://github.com/docker/compose/releases  
-Загружаем необходимую версию 1.х.х или 2.х.х, сохраняем исполняемый файл в каталоге /usr/local/bin/docker-compose
+1. Проверяем последнюю версию релиза на странице https://github.com/docker/compose/releases  
+Загружаем необходимую версию 1.х.х или 2.х.х и сохраняем исполняемый файл в каталоге /usr/local/bin/docker-compose:
 ```bash
-sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-sudo curl -L "https://github.com/docker/compose/releases/download/v2.3.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+export DOCKER_COMPOSE_VERSION=2.3.4
+sudo curl -L "https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 ```
 
-Задаём правильные разрешения, чтобы сделать команду docker-compose исполняемой
+2. Задаём правильные разрешения, чтобы сделать команду docker-compose исполняемой:
 ```bash
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-Проверяем успешность установки
+3. Проверяем версию docker-compose:
 ```bash
 docker-compose --version 
 ```
