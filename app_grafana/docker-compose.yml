@@ -7,7 +7,7 @@ services:
       - 3000:3000
     volumes:
       - type: bind
-        source: ./ini-grafana/grafana.ini
+        source: ./grafana/grafana.ini
         target: /etc/grafana/grafana.ini
         read_only: true
     environment: 
