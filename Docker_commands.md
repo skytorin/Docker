@@ -5,6 +5,8 @@
 ### Ручая установка
 ```bash
 curl -L get.docker.com | bash
+ или
+curl -sSL https://get.docker.com/ | sh
 ```
 
 ### Установка через APT
