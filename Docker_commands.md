@@ -290,7 +290,7 @@ docker push eon01/nginx localhost:5000/myadmin/nginx
 
 Смена тега для возможности пуша локального образа в новый удаленный репозитарий
 ```bash
-docker tag local-image:tagname new-repo:tagname
+docker tag SOURCE_IMAGE[:TAG] REGISTRY_HOST/TARGET_REGISTRY/REPOSITORY[:TAG]
 ```
 
 ### Диагностика работы контейнера
