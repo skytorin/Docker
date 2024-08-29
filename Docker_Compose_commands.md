@@ -5,7 +5,7 @@
 1. Проверяем последнюю версию релиза на странице https://github.com/docker/compose/releases  
 Загружаем необходимую версию 1.х.х или 2.х.х и сохраняем исполняемый файл в каталоге /usr/local/bin/docker-compose:
 ```bash
-export DOCKER_COMPOSE_VERSION=2.3.4
+export DOCKER_COMPOSE_VERSION=v2.3.4
 sudo curl -L "https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 ```
 
